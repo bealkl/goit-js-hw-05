@@ -1,10 +1,10 @@
 //GOIT javascript homework 05 task 2
 
 class User {
-  constructor(args) {
-    this.name = new String(args['name']);
-    this.age = args['age'];
-    this.followers = args['followers'];
+  constructor({ name, age, followers }) {
+    this.name = name;
+    this.age = age;
+    this.followers = followers;
   }
 }
 

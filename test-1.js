@@ -1,8 +1,8 @@
 //GOIT javascript homework 05 task 1
 
-const Account = function (args) {
-  this.login = args['login'];
-  this.email = args['email'];
+const Account = function ({ login, email }) {
+  this.login = login;
+  this.email = email;
 };
 
 Account.prototype.getInfo = function () {

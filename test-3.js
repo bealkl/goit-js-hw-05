@@ -12,10 +12,8 @@ class Storage {
     this.items.push(item);
   }
   removeItem(item) {
-    this.items.splice(
-      this.items.findIndex(element => element == item),
-      1,
-    );
+    const foundIdx = this.items.findIndex(element => element == item);
+    if (foundIdx < 0) this.items.splice(foundIdx, 1);
   }
 }
 
